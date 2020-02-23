@@ -14,6 +14,7 @@ public class DatesMain {
         System.out.println(now);
         System.out.println(zonedDateTime);
         System.out.println(localDateTime);
+        System.out.println(zonedDateTime.withZoneSameInstant(ZoneId.of("Canada/Atlantic")));
         Set<String> allZones= ZoneId.getAvailableZoneIds();
         for(String zone:allZones){
             System.out.println(zone);
